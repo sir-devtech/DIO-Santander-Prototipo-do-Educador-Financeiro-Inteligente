@@ -1,23 +1,25 @@
 # Educador Financeiro Inteligente — Desafio Criativo (DIO)
 
 Trilha Santander 2026 - React Frontend  
-Moisés | GitHub: sir-devtech
+Moisés Santos | GitHub: sir-devtech | Sir Tech Solutions
 
-Escolhi o perfil **B** do meu rascunho: quem estuda tech e às vezes ganha um extra, mas não vive só de freela.
+Montei esse desafio a partir do **meu** contexto, não de um perfil genérico de estudante.
 
-Eu tô na DIO focando em React. Tenho entrada mais ou menos fixa (CLT ou ajuda da família, depende do mês) e de vez em quando entra um freela pequeno de dev — aí o total muda e eu não separo direito o que é **investimento em estudo** do que é **gasto de lazer**. No mês passado percebi que delivery + assinatura (streaming, ferramenta) comiam quase **R$ 400** antes do dia 15, e a meta de guardar **R$ 50 por semana** ficou só no papel.
+Sou **CLT na Guarda Civil Municipal** há mais de 7 anos, **estudante de Engenharia de Software** (indo pro 5º semestre) e, fora do expediente, desenvolvo produtos pela **Sir Tech Solutions** — do desenho ao deploy, documentação e manutenção. Já tenho sistema **offline de guincho** entregue, gestão pra Pet Shop e Barbearia em produção, e um projeto de **segurança pública** (painel web + Android com Botão do Pânico, registro no INPI) voltado à realidade da GCM.
+
+Minha dor financeira hoje não é “não ter salário”: é **não misturar o salário fixo da GCM com o caixa dos meus sistemas**. AWS, Digital Ocean, domínio, ferramenta e hora de dev viram custo — e sem separar direito eu não enxergo se o projeto se paga, se a reserva pessoal tá ok ou se tô subsidiando produto com o salário público (no sentido organizacional, não jurídico).
 
 ---
 
 ## Passo 1 — Papel do Educador Financeiro
 
-Crie a ideia de um Educador Financeiro Inteligente voltado para **quem estuda programação e tem renda mista** — salário ou mesada + freela pontual, sem ser autônomo em tempo integral.
+Crie a ideia de um Educador Financeiro Inteligente voltado para **profissionais com renda fixa CLT que também empreendem em tech de forma autônoma** — dev full cycle com produtos próprios ou projetos reais em produção.
 
-O principal problema dessa pessoa é **misturar gasto com curso, ferramenta e delivery/lazer**, e no fim do mês não saber se sobrou algo pra reserva ou se o freela sumiu em coisa pequena.
+O principal problema dessa pessoa é **confundir finanças pessoais com investimento em produto** (nuvem, licença, hardware, tempo de desenvolvimento) e não ter um “painel único” que respeite a estabilidade do emprego e o risco do negócio paralelo.
 
-A solução deve ajudar o usuário a **separar “caixa estudo” e “caixa pessoal”, ver o mês virando e manter uma meta simples de guardar** (tipo R$ 50/semana), sem planilha chata.
+A solução deve ajudar o usuário a **separar caixa pessoal e caixa do negócio, enxergar custo de infra e ferramentas, simular um mês apertado e manter reserva pessoal sem abandonar os projetos**.
 
-O sistema deve se comunicar de forma **direta, como colega de trilha** — sem palestra de banco e sem culpar por pedir iFood.
+O sistema deve se comunicar de forma **objetiva e responsável** — linguagem de quem já lida com pressão e decisão rápida (no meu caso, vivência de GCM), sem moralismo e sem prometer investimento milagroso.
 
 ---
 
@@ -25,70 +27,70 @@ O sistema deve se comunicar de forma **direta, como colega de trilha** — sem p
 
 O Educador Financeiro Inteligente deve possuir os seguintes recursos:
 
-1. **Painel com duas caixas: Estudo e Pessoal** — curso, certificação, ferramenta de dev de um lado; moradia, transporte, lazer do outro.
-2. **Simulação de “mês sem freela”** — e se não entrar o extra? O que cortar primeiro sem prejudicar a trilha.
-3. **Alerta “delivery + assinaturas”** — avisa quando passar de um teto que o usuário define (no meu caso começaria em **R$ 350/mês**), porque é onde eu mais escorrego.
-4. **Meta semanal de reserva** — acompanhar os **R$ 50/semana** com barra simples e mensagem quando faltar 1–2 depósitos.
+1. **Duas caixas: Pessoal (CLT) e Sir Tech / projetos** — salário, moradia, reserva de um lado; AWS, DO, domínio, ferramentas e custo de entrega do outro.
+2. **Painel de custo de infra** — soma mensal de cloud e CI/CD; avisa quando passar de um teto (eu começaria monitorando a partir de **R$ 200/mês** em serviços, ajustando conforme o projeto).
+3. **Simulador “mês sem faturamento novo”** — e se só entrar o CLT e nenhum cliente novo? O que pausar na nuvem sem matar o que já está em produção (ex.: pet shop, barbearia).
+4. **Checklist por tipo de produto** — offline (guincho: custo baixo recorrente) vs online (sistemas web/mobile: custo contínuo de hospedagem e monitoramento).
 
-A IA deve adaptar as recomendações com base em **quanto entrou de fixo vs freela no mês, quanto foi pra estudo, quanto já foi guardado na meta semanal e se a pessoa está em fase de bootcamp (gastos apertados) ou já estáganando um pouco mais**.
+A IA deve adaptar as recomendações com base em **salário CLT, quanto foi reinvestido em produtos, quantos projetos ativos em produção, meta de reserva pessoal e se há custo fixo de nuvem ou entrega pontual**.
 
-Evite respostas **genéricas, jargão de investimento ou indicação de produto financeiro**. Não prometer rentabilidade.
+Evite respostas **genéricas, jargão de investimento, indicação de produto financeiro ou promessa de rentabilidade**. Não substituir contador ou advogado.
 
-As sugestões devem ser apresentadas no formato **lista curta, valor em R$ quando couber, um exemplo do meu contexto (estudo + freela) e só um próximo passo**.
+As sugestões devem ser apresentadas no formato **lista curta, valores em R$, exemplo ligado a dev que mantém sistema em produção e um único próximo passo**.
 
 ---
 
 ## Passo 3 — Prompt final
 
-Bloco que eu rodaria no Copilot / ChatGPT:
-
 ```text
 Atue como um especialista em educação financeira digital.
-Crie a proposta de um Educador Financeiro Inteligente para quem estuda programação (bootcamp/trilha tipo DIO) e tem renda mista: entrada fixa ou mesada + freela pontual de dev.
+Crie a proposta de um Educador Financeiro Inteligente para profissionais CLT que também desenvolvem e mantêm sistemas de forma autônoma (produtos próprios, clientes reais, web, mobile e offline).
 
-O sistema deve ajudar a separar gastos de estudo (curso, certificação, ferramentas) dos gastos pessoais, simular um mês sem freela extra, e manter uma meta simples de reserva (ex.: R$ 50 por semana).
+O sistema deve ajudar a separar finanças pessoais (salário fixo) do caixa do negócio tech, visualizar custos de infraestrutura (cloud, domínio, ferramentas, CI/CD), simular um mês sem nova receita de projetos e proteger a reserva pessoal sem travar o que já está em produção.
 
 As principais funcionalidades devem incluir:
-- Painel com duas caixas: Estudo e Pessoal
-- Simulador "e se não entrar freela este mês?" com cortes priorizados
-- Alerta quando delivery + assinaturas passarem de um teto definido pelo usuário
-- Acompanhamento de meta semanal de reserva com barra de progresso
+- Painel com duas caixas: Pessoal (CLT) e Negócio (projetos/produtos)
+- Monitor de custo mensal de infra e alerta de teto configurável
+- Simulador "mês só com salário CLT" com cortes priorizados (o que pausar na nuvem vs o que é essencial)
+- Visão por tipo de produto: sistema offline entregue vs SaaS/web em produção
 
-A comunicação deve ser direta e de colega, sem julgar gasto com delivery ou streaming.
+A comunicação deve ser objetiva, respeitosa e prática — como orientação para quem já entrega software de verdade.
 
-As respostas devem vir em listas curtas, exemplos em R$, linguagem fácil e um único próximo passo por vez.
+As respostas devem vir em listas curtas, exemplos em R$, linguagem acessível e um único próximo passo por vez.
 
 Evite jargão bancário, texto vago, promessa de rentabilidade e recomendações que pareçam venda de produto financeiro.
 
-Personalize com base em: fixo vs freela no mês, quanto foi investido em estudo, progresso da meta semanal de reserva e se o usuário está em fase de bootcamp apertada ou com margem maior.
+Personalize com base em: valor do salário CLT, reinvestimento mensal em projetos, quantidade de produtos em produção, meta de reserva pessoal e perfil de custo (mais cloud contínuo ou mais entrega/offline).
 
-No final, sugira como virar projeto frontend interativo com React e Tailwind: telas, componentes e um detalhe de gamificação (badge, streak, etc).
+No final, sugira como virar projeto frontend interativo com React, Vite e Tailwind CSS: telas, componentes reutilizáveis e gamificação leve (badge de "mês equilibrado", barra de reserva, etc).
 ```
 
 ---
 
 ## Minhas ideias de frontend (React + Tailwind)
 
-Pensei em algo que **eu** usaria enquanto termino a trilha Santander — não um app genérico de autônomo.
+Rabiscado pensando no que **eu** usaria na Sir Tech — stack que já trabalho (React, Vite, Tailwind), não template de app genérico.
 
-### Ideia 1 — Home “Estudo vs Pessoal”
+### Ideia 1 — Home “CLT vs Sir Tech”
 
-Dois cards lado a lado: quanto foi pra DIO, cursos e ferramentas; quanto foi pra moradia, comida e lazer. Barra do mês e linha da meta **R$ 50/semana** (4 tick marks).
+Dois blocos: entrada GCM + gastos pessoais; saídas de infra (AWS/DO), ferramentas e horas estimadas nos projetos. Barra de **reserva pessoal** separada do “caixa reinvestimento”.
 
-Componentes: `SplitCard`, `WeeklyGoalBar`, `MonthPicker`.
+Componentes: `PersonalLedgerCard`, `BusinessLedgerCard`, `ReserveProgressBar`.
 
-Badge “Semana no verde” quando bater os R$ 50 — simples, mas eu voltaria pra ver.
+Badge **“Mês equilibrado”** quando reserva pessoal bate meta e infra não estourou o teto.
 
-### Ideia 2 — “Mês sem freela”
+### Ideia 2 — Mapa de projetos reais
 
-Campo com média do freela dos últimos meses → botão “simular zero freela” → lista: o que é essencial (internet, trilha) vs o que pode pausar (assinatura extra).
+Cards por produto: **Guincho (offline)**, **Pet/Barbearia (web em produção)**, **GCM / segurança pública (web + Android)**. Cada um mostra custo recorrente estimado e botão “simular pausa de ambiente”.
 
-`ScenarioButton`, `EssentialTag`, lista com checkbox.
+`ProjectTile`, `CostTag`, `OfflineBadge` vs `CloudBadge`.
 
-### Ideia 3 — Alerta delivery + assinaturas
+Ajuda a lembrar que offline não é “zero custo”, mas a lógica é outra — igual eu aprendi entregando o guincho.
 
-Input do teto (default 350). Conforme lança gastos, donut ou barra mostra quanto falta pro teto. Passou? banner amarelo com **uma** sugestão (ex.: “cortar 2 pedidos = volta pro teto”).
+### Ideia 3 — Alerta infra + DevOps
 
-`ThresholdInput`, `SpendDonut`, `SoftAlert`.
+Lista de itens: Digital Ocean, AWS, domínio, GitHub Actions. Usuário define teto; passou, banner com **uma** ação (ex.: revisar ambiente de homologação ocioso).
 
-Tudo com Tailwind, mobile first — é o jeito que tô aprendendo na trilha mesmo.
+`InfraLineItem`, `ThresholdAlert` — conectado ao jeito que já cuido de deploy e ambiente.
+
+Mobile first com Tailwind, porque parte da operação eu imagino consultando rápido, no intervalo entre turno e código.
