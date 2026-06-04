@@ -3,19 +3,21 @@
 Trilha Santander 2026 - React Frontend  
 Moisés | GitHub: sir-devtech
 
-Fiz esse desafio pensando em quem trabalha por conta e nunca sabe se o mês vai fechar bem. Conheço gente (e já passei perto disso) que ganha bem num mês e no outro aperta — e a planilha acaba ficando de lado.
+Escolhi o perfil **B** do meu rascunho: quem estuda tech e às vezes ganha um extra, mas não vive só de freela.
+
+Eu tô na DIO focando em React. Tenho entrada mais ou menos fixa (CLT ou ajuda da família, depende do mês) e de vez em quando entra um freela pequeno de dev — aí o total muda e eu não separo direito o que é **investimento em estudo** do que é **gasto de lazer**. No mês passado percebi que delivery + assinatura (streaming, ferramenta) comiam quase **R$ 400** antes do dia 15, e a meta de guardar **R$ 50 por semana** ficou só no papel.
 
 ---
 
 ## Passo 1 — Papel do Educador Financeiro
 
-Crie a ideia de um Educador Financeiro Inteligente voltado para **freelancers e autônomos que ganham valores diferentes a cada mês**.
+Crie a ideia de um Educador Financeiro Inteligente voltado para **quem estuda programação e tem renda mista** — salário ou mesada + freela pontual, sem ser autônomo em tempo integral.
 
-O principal problema dessa pessoa é **não ter clareza de quanto pode gastar, quanto guardar e quanto separar pra imposto** quando a renda não é fixa. No fim das contas vira chute e ansiedade.
+O principal problema dessa pessoa é **misturar gasto com curso, ferramenta e delivery/lazer**, e no fim do mês não saber se sobrou algo pra reserva ou se o freela sumiu em coisa pequena.
 
-A solução deve ajudar o usuário a **ver pra onde o dinheiro foi, planejar um mês mais fraco e montar uma reserva aos poucos**, sem aquela planilha gigante que ninguém mantém.
+A solução deve ajudar o usuário a **separar “caixa estudo” e “caixa pessoal”, ver o mês virando e manter uma meta simples de guardar** (tipo R$ 50/semana), sem planilha chata.
 
-O sistema deve se comunicar de forma **simples, direta e sem frescura** — nada de parecer que tá julgando se a pessoa gastou errado.
+O sistema deve se comunicar de forma **direta, como colega de trilha** — sem palestra de banco e sem culpar por pedir iFood.
 
 ---
 
@@ -23,72 +25,70 @@ O sistema deve se comunicar de forma **simples, direta e sem frescura** — nada
 
 O Educador Financeiro Inteligente deve possuir os seguintes recursos:
 
-1. **Um painel básico de entradas e saídas** — o usuário vê fixo, variável, quanto sobrou e uma sugestão de % pra reserva e imposto.
-2. **Simulação de “mês ruim”** — tipo: “e se eu ganhar 30% menos?” e a ferramenta sugere o que cortar primeiro.
-3. **Lições curtas** — reserva de emergência, separar conta pessoal do trabalho, noção de DAS/imposto, cada uma em poucos minutos.
+1. **Painel com duas caixas: Estudo e Pessoal** — curso, certificação, ferramenta de dev de um lado; moradia, transporte, lazer do outro.
+2. **Simulação de “mês sem freela”** — e se não entrar o extra? O que cortar primeiro sem prejudicar a trilha.
+3. **Alerta “delivery + assinaturas”** — avisa quando passar de um teto que o usuário define (no meu caso começaria em **R$ 350/mês**), porque é onde eu mais escorrego.
+4. **Meta semanal de reserva** — acompanhar os **R$ 50/semana** com barra simples e mensagem quando faltar 1–2 depósitos.
 
-A IA deve adaptar as recomendações com base em **quanto a pessoa ganhou em média nos últimos 3 meses, quanto já guardou, a meta dela (tipo guardar 3 ou 6 meses de custo) e se prefere ir com calma ou um pouco mais ousado no corte de gastos**.
+A IA deve adaptar as recomendações com base em **quanto entrou de fixo vs freela no mês, quanto foi pra estudo, quanto já foi guardado na meta semanal e se a pessoa está em fase de bootcamp (gastos apertados) ou já estáganando um pouco mais**.
 
-Evite respostas **muito genéricas, cheias de termo de banco ou parecendo propaganda de investimento**. Não prometer lucro nem indicar produto X ou Y.
+Evite respostas **genéricas, jargão de investimento ou indicação de produto financeiro**. Não prometer rentabilidade.
 
-As sugestões devem ser apresentadas no formato **lista curta, valor em real quando fizer sentido, exemplo do dia a dia e só uma ação pra fazer agora**.
+As sugestões devem ser apresentadas no formato **lista curta, valor em R$ quando couber, um exemplo do meu contexto (estudo + freela) e só um próximo passo**.
 
 ---
 
 ## Passo 3 — Prompt final
 
-É esse bloco aqui que eu usaria no Copilot / ChatGPT:
+Bloco que eu rodaria no Copilot / ChatGPT:
 
 ```text
 Atue como um especialista em educação financeira digital.
-Crie a proposta de um Educador Financeiro Inteligente para freelancers e autônomos com renda que muda de um mês pro outro.
+Crie a proposta de um Educador Financeiro Inteligente para quem estuda programação (bootcamp/trilha tipo DIO) e tem renda mista: entrada fixa ou mesada + freela pontual de dev.
 
-O sistema deve ajudar a pessoa a organizar gastos e ganhos, simular um mês com menos entrada, separar uma parte pra imposto e reserva, e aprender o básico de finanças sem depender de planilha complexa.
+O sistema deve ajudar a separar gastos de estudo (curso, certificação, ferramentas) dos gastos pessoais, simular um mês sem freela extra, e manter uma meta simples de reserva (ex.: R$ 50 por semana).
 
 As principais funcionalidades devem incluir:
-- Painel simples com categorias: fixo, variável, reserva e impostos
-- Simulador do tipo "e se eu ganhar X% a menos?" com ideia do que cortar primeiro
-- Trilha de micro-aulas sobre reserva, conta pessoal vs trabalho e noções de imposto pra autônomo
+- Painel com duas caixas: Estudo e Pessoal
+- Simulador "e se não entrar freela este mês?" com cortes priorizados
+- Alerta quando delivery + assinaturas passarem de um teto definido pelo usuário
+- Acompanhamento de meta semanal de reserva com barra de progresso
 
-A comunicação deve ser direta e amigável, como quem já passou por mês apertado e quer ajudar de verdade.
+A comunicação deve ser direta e de colega, sem julgar gasto com delivery ou streaming.
 
-As respostas devem vir em listas curtas, com exemplos em R$ quando couber, linguagem fácil e só um "próximo passo" por vez.
+As respostas devem vir em listas curtas, exemplos em R$, linguagem fácil e um único próximo passo por vez.
 
-Evite jargão de banco, texto vago, promessa de rentabilidade e qualquer coisa que pareça consultoria ou venda de produto financeiro.
+Evite jargão bancário, texto vago, promessa de rentabilidade e recomendações que pareçam venda de produto financeiro.
 
-Use como base pra personalizar: média dos últimos 3 meses, quanto já foi guardado, meta de reserva (3 ou 6 meses de custo fixo) e se o perfil é mais conservador ou moderado.
+Personalize com base em: fixo vs freela no mês, quanto foi investido em estudo, progresso da meta semanal de reserva e se o usuário está em fase de bootcamp apertada ou com margem maior.
 
-No final, me dê ideias de como virar um projeto frontend interativo com React e Tailwind: telas principais, componentes que fariam sentido e alguma forma de deixar o uso mais engajador (badge, barra de progresso, etc).
+No final, sugira como virar projeto frontend interativo com React e Tailwind: telas, componentes e um detalhe de gamificação (badge, streak, etc).
 ```
 
 ---
 
 ## Minhas ideias de frontend (React + Tailwind)
 
-Depois de montar o prompt, fui rabiscando como isso poderia virar tela. São 3 caminhos — não precisa ser os três no mesmo app, é mais pra explorar:
+Pensei em algo que **eu** usaria enquanto termino a trilha Santander — não um app genérico de autônomo.
 
-### Ideia 1 — Tela inicial “quatro caixinhas”
+### Ideia 1 — Home “Estudo vs Pessoal”
 
-Na home mostraria: quanto entrou no mês, gastos fixos, o que sobrou e quanto já foi pra reserva/imposto. Barra colorida: verde ok, amarelo atenção, vermelho apertado.
+Dois cards lado a lado: quanto foi pra DIO, cursos e ferramentas; quanto foi pra moradia, comida e lazer. Barra do mês e linha da meta **R$ 50/semana** (4 tick marks).
 
-Componentes que eu criaria: card de resumo, lista de categorias, seletor de mês.
+Componentes: `SplitCard`, `WeeklyGoalBar`, `MonthPicker`.
 
-Se bater a meta do mês, aparece um selo tipo “mês no azul” — bobo, mas dá vontade de voltar.
+Badge “Semana no verde” quando bater os R$ 50 — simples, mas eu voltaria pra ver.
 
-### Ideia 2 — Simulador com slider
+### Ideia 2 — “Mês sem freela”
 
-O usuário informa uma média de ganho e arrasta um slider pra baixo (ex.: -20%, -40%). A lista mostra cortes sugeridos e ele marca o que topa fazer.
+Campo com média do freela dos últimos meses → botão “simular zero freela” → lista: o que é essencial (internet, trilha) vs o que pode pausar (assinatura extra).
 
-Daria pra usar um componente de slider, linha de sugestão com tag de prioridade (essencial / pode esperar).
+`ScenarioButton`, `EssentialTag`, lista com checkbox.
 
-A barra de “saúde do caixa” ia mudando na hora — feedback visual ajuda quem não gosta de número solto.
+### Ideia 3 — Alerta delivery + assinaturas
 
-### Ideia 3 — Trilha rápida de estudo
+Input do teto (default 350). Conforme lança gastos, donut ou barra mostra quanto falta pro teto. Passou? banner amarelo com **uma** sugestão (ex.: “cortar 2 pedidos = volta pro teto”).
 
-Cards com lição de 2–3 min, uma pergunta no fim, depois volta pro painel. Módulos desbloqueiam aos poucos: reserva, imposto, separar PF e PJ.
+`ThresholdInput`, `SpendDonut`, `SoftAlert`.
 
-Streak de dias seguidos abrindo o app — bem estilo app de hábito, mas pro lado educação financeira.
-
----
-
-Fim do arquivo. Qualquer dúvida na correção, o essencial tá nos três passos + o bloco do Passo 3 em `text` acima.
+Tudo com Tailwind, mobile first — é o jeito que tô aprendendo na trilha mesmo.
