@@ -7,7 +7,7 @@ Montei esse desafio a partir do **meu** contexto, não de um perfil genérico de
 
 Sou **CLT na Guarda Civil Municipal** há mais de 7 anos, **estudante de Engenharia de Software** (indo pro 5º semestre) e, fora do expediente, desenvolvo produtos pela **Sir Tech Solutions** — do desenho ao deploy, documentação e manutenção. Já tenho sistema **offline de guincho** entregue, gestão pra Pet Shop e Barbearia em produção, e um projeto de **segurança pública** (painel web + Android com Botão do Pânico, registro no INPI) voltado à realidade da GCM.
 
-Minha dor financeira hoje não é “não ter salário”: é **não misturar o salário fixo da GCM com o caixa dos meus sistemas**. AWS, Digital Ocean, domínio, ferramenta e hora de dev viram custo — e sem separar direito eu não enxergo se o projeto se paga, se a reserva pessoal tá ok ou se tô subsidiando produto com o salário público (no sentido organizacional, não jurídico).
+Minha dor financeira hoje não é “não ter salário”: é **não misturar o salário fixo da GCM com o que eu coloco nos meus sistemas** — ferramentas, horas de desenvolvimento, melhorias nos produtos. Sem separar direito, não sei se a reserva pessoal tá ok ou se tô puxando demais do bolso da família por causa do negócio paralelo.
 
 ---
 
@@ -15,9 +15,9 @@ Minha dor financeira hoje não é “não ter salário”: é **não misturar o 
 
 Crie a ideia de um Educador Financeiro Inteligente voltado para **profissionais com renda fixa CLT que também empreendem em tech de forma autônoma** — dev full cycle com produtos próprios ou projetos reais em produção.
 
-O principal problema dessa pessoa é **confundir finanças pessoais com investimento em produto** (nuvem, licença, hardware, tempo de desenvolvimento) e não ter um “painel único” que respeite a estabilidade do emprego e o risco do negócio paralelo.
+O principal problema dessa pessoa é **confundir finanças pessoais com investimento no negócio** (tempo, melhorias, materiais, deslocamento) e não ter um lugar simples pra enxergar as duas coisas separadas.
 
-A solução deve ajudar o usuário a **separar caixa pessoal e caixa do negócio, enxergar custo de infra e ferramentas, simular um mês apertado e manter reserva pessoal sem abandonar os projetos**.
+A solução deve ajudar o usuário a **separar caixa pessoal e caixa do negócio, planejar um mês mais apertado e manter reserva pessoal sem abandonar os projetos que já estão rodando**.
 
 O sistema deve se comunicar de forma **objetiva e responsável** — linguagem de quem já lida com pressão e decisão rápida (no meu caso, vivência de GCM), sem moralismo e sem prometer investimento milagroso.
 
@@ -27,16 +27,16 @@ O sistema deve se comunicar de forma **objetiva e responsável** — linguagem d
 
 O Educador Financeiro Inteligente deve possuir os seguintes recursos:
 
-1. **Duas caixas: Pessoal (CLT) e Sir Tech / projetos** — salário, moradia, reserva de um lado; AWS, DO, domínio, ferramentas e custo de entrega do outro.
-2. **Painel de custo de infra** — soma mensal de cloud e CI/CD; avisa quando passar de um teto (eu começaria monitorando a partir de **R$ 200/mês** em serviços, ajustando conforme o projeto).
-3. **Simulador “mês sem faturamento novo”** — e se só entrar o CLT e nenhum cliente novo? O que pausar na nuvem sem matar o que já está em produção (ex.: pet shop, barbearia).
-4. **Checklist por tipo de produto** — offline (guincho: custo baixo recorrente) vs online (sistemas web/mobile: custo contínuo de hospedagem e monitoramento).
+1. **Duas caixas: Pessoal (CLT) e Sir Tech / projetos** — salário, moradia, reserva de um lado; gastos e reinvestimento ligados aos produtos do outro.
+2. **Simulador “mês sem entrada nova de projeto”** — e se só entrar o CLT? O que reduzir ou adiar sem prejudicar o que o cliente já usa (pet shop, barbearia, etc.).
+3. **Visão por produto** — offline entregue (guincho) vs sistemas que você segue evoluindo (web/mobile), pra lembrar que cada um pesa diferente no bolso e no tempo.
+4. **Meta de reserva pessoal** — acompanhar um valor mensal que você define (ex.: guardar um percentual fixo do salário CLT) com barra simples.
 
-A IA deve adaptar as recomendações com base em **salário CLT, quanto foi reinvestido em produtos, quantos projetos ativos em produção, meta de reserva pessoal e se há custo fixo de nuvem ou entrega pontual**.
+A IA deve adaptar as recomendações com base em **salário CLT, quanto foi reinvestido nos produtos, quantos projetos ativos, meta de reserva pessoal e prioridade do momento (estudo, entrega, manutenção)**.
 
 Evite respostas **genéricas, jargão de investimento, indicação de produto financeiro ou promessa de rentabilidade**. Não substituir contador ou advogado.
 
-As sugestões devem ser apresentadas no formato **lista curta, valores em R$, exemplo ligado a dev que mantém sistema em produção e um único próximo passo**.
+As sugestões devem ser apresentadas no formato **lista curta, valores em R$ quando couber, exemplo ligado a quem mantém software em produção e um único próximo passo**.
 
 ---
 
@@ -46,13 +46,13 @@ As sugestões devem ser apresentadas no formato **lista curta, valores em R$, ex
 Atue como um especialista em educação financeira digital.
 Crie a proposta de um Educador Financeiro Inteligente para profissionais CLT que também desenvolvem e mantêm sistemas de forma autônoma (produtos próprios, clientes reais, web, mobile e offline).
 
-O sistema deve ajudar a separar finanças pessoais (salário fixo) do caixa do negócio tech, visualizar custos de infraestrutura (cloud, domínio, ferramentas, CI/CD), simular um mês sem nova receita de projetos e proteger a reserva pessoal sem travar o que já está em produção.
+O sistema deve ajudar a separar finanças pessoais (salário fixo) do caixa do negócio tech, simular um mês sem nova receita de projetos e proteger a reserva pessoal sem travar o que já está em produção.
 
 As principais funcionalidades devem incluir:
 - Painel com duas caixas: Pessoal (CLT) e Negócio (projetos/produtos)
-- Monitor de custo mensal de infra e alerta de teto configurável
-- Simulador "mês só com salário CLT" com cortes priorizados (o que pausar na nuvem vs o que é essencial)
-- Visão por tipo de produto: sistema offline entregue vs SaaS/web em produção
+- Simulador "mês só com salário CLT" com prioridades do que adiar ou manter
+- Visão por produto: sistema offline entregue vs sistemas em evolução contínua
+- Acompanhamento de meta de reserva pessoal com barra de progresso
 
 A comunicação deve ser objetiva, respeitosa e prática — como orientação para quem já entrega software de verdade.
 
@@ -60,7 +60,7 @@ As respostas devem vir em listas curtas, exemplos em R$, linguagem acessível e 
 
 Evite jargão bancário, texto vago, promessa de rentabilidade e recomendações que pareçam venda de produto financeiro.
 
-Personalize com base em: valor do salário CLT, reinvestimento mensal em projetos, quantidade de produtos em produção, meta de reserva pessoal e perfil de custo (mais cloud contínuo ou mais entrega/offline).
+Personalize com base em: valor do salário CLT, reinvestimento mensal em projetos, quantidade de produtos em produção e meta de reserva pessoal.
 
 No final, sugira como virar projeto frontend interativo com React, Vite e Tailwind CSS: telas, componentes reutilizáveis e gamificação leve (badge de "mês equilibrado", barra de reserva, etc).
 ```
@@ -69,28 +69,26 @@ No final, sugira como virar projeto frontend interativo com React, Vite e Tailwi
 
 ## Minhas ideias de frontend (React + Tailwind)
 
-Rabiscado pensando no que **eu** usaria na Sir Tech — stack que já trabalho (React, Vite, Tailwind), não template de app genérico.
+Rabiscado pensando no que **eu** usaria na Sir Tech — React, Vite e Tailwind, stack que já uso no dia a dia.
 
 ### Ideia 1 — Home “CLT vs Sir Tech”
 
-Dois blocos: entrada GCM + gastos pessoais; saídas de infra (AWS/DO), ferramentas e horas estimadas nos projetos. Barra de **reserva pessoal** separada do “caixa reinvestimento”.
+Dois blocos: entrada GCM + gastos pessoais; reinvestimento e gastos ligados aos projetos. Barra de **reserva pessoal** separada do “caixa Sir Tech”.
 
 Componentes: `PersonalLedgerCard`, `BusinessLedgerCard`, `ReserveProgressBar`.
 
-Badge **“Mês equilibrado”** quando reserva pessoal bate meta e infra não estourou o teto.
+Badge **“Mês equilibrado”** quando a reserva pessoal bate a meta que eu defini no começo do mês.
 
-### Ideia 2 — Mapa de projetos reais
+### Ideia 2 — Mapa de projetos
 
-Cards por produto: **Guincho (offline)**, **Pet/Barbearia (web em produção)**, **GCM / segurança pública (web + Android)**. Cada um mostra custo recorrente estimado e botão “simular pausa de ambiente”.
+Cards por produto: **Guincho (offline entregue)**, **Pet/Barbearia (em produção)**, **Segurança pública / GCM (em desenvolvimento)**. Status simples: entregue, em uso, em evolução.
 
-`ProjectTile`, `CostTag`, `OfflineBadge` vs `CloudBadge`.
+`ProjectTile`, `StatusBadge`, `OfflineTag` vs `OnlineTag`.
 
-Ajuda a lembrar que offline não é “zero custo”, mas a lógica é outra — igual eu aprendi entregando o guincho.
+### Ideia 3 — Simulador “só CLT este mês”
 
-### Ideia 3 — Alerta infra + DevOps
+Botão que zera entradas de projeto no mês e lista o que é essencial manter (suporte ao cliente) vs o que pode esperar (feature nova, refatoração grande).
 
-Lista de itens: Digital Ocean, AWS, domínio, GitHub Actions. Usuário define teto; passou, banner com **uma** ação (ex.: revisar ambiente de homologação ocioso).
+`ScenarioToggle`, `PriorityList`, checkbox do que eu aceito adiar.
 
-`InfraLineItem`, `ThresholdAlert` — conectado ao jeito que já cuido de deploy e ambiente.
-
-Mobile first com Tailwind, porque parte da operação eu imagino consultando rápido, no intervalo entre turno e código.
+Mobile first com Tailwind — consulta rápida entre turno e código.
